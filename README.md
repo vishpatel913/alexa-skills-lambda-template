@@ -53,31 +53,10 @@ Sign in
 Create a Lambda    
 Name your lambda  
 Set existing role to lambda_basic_execution  
-Copy the ARN number from top right hand corner and paste into the configuration page on Alexa Skills tab    
-In your Lambda copy the following code.
-<code>
-<c/ode>
-rts.handler = (event, context) => {
-  switch(event.request.intent.slots.Params.value) {
-    case "funny":
-      context.succeed(
-          generateResponse("What is the most used language in development? ..... Profanity")
-          )
-        break;
-    case "fact":
-      context.succeed(
-          generateResponse("He drinks.")
-          )
-        break;
-  }
-};
-generateResponse = (outputText) => {
-  return {
-    response: {
-      outputSpeech: {
-        type: "PlainText",
-        text: outputText
-      }
-    }
-  }
-}
+Copy the ARN number from top right hand corner and paste into the configuration page on the Alexa Skills tab    
+In your Lambda paste in the code.
+Create the function.
+In the next page you can edit the function in the code tab.
+You can also test the function. To do this select "Configure test event" under the Actions menu
+Here you can select a default test from the list or you can paste in an example of a response.
+You can generate one of these in the test page on the Alexa Skills tab, by typing out an utterances.
