@@ -1,9 +1,9 @@
 
 # Alexa Skills Template
-[Link to the video](https://drive.google.com/drive/folders/0B5189b8eE2iOUjFpRWY3cmJKcXc)... 
+[Link to the video](https://drive.google.com/drive/folders/0B5189b8eE2iOUjFpRWY3cmJKcXc)...
 This walkthrough and accompanying video will take you through as simple as possible an Alexa Skill that doesn't involve the words 'Hello' or 'World'.      
 Please feel free to do pull requests for any errors in this walkthrough or in the video. We would really appreciate if you did.      
-![structure](https://github.com.com/vishpatel7/alexa-lambda-template/master/img/structure.png)       
+![structure](https://github.com.com/vishpatel7/alexa-lambda-template/master/img/structure-diagram.png)       
 This is the structure of our Alexa Skill (don't worry if you don't have an Amazon Echo, [echosim.io](www.echosim.io) will work just fine for our purposes).      
 First things first    
 ## Step 1. Sign up for everything     
@@ -22,7 +22,7 @@ Give your skill a name, an invocation name ('example' if you're following strict
 Click Next
 ## Step 3. Create Interaction Model    
 The  interaction model is where you configure the 'front-end' of your app. Here's documentation if you wish to peruse [Interaction Model Documentation](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interaction-model-reference) [02:15]
-  We are going to have one intent which has one slot. The intent is going to be 'tell' and the slot we're calling 'params'. This is going to be a custom type. [02:19] 
+  We are going to have one intent which has one slot. The intent is going to be 'tell' and the slot we're calling 'params'. This is going to be a custom type. [02:19]
   ```
 {      
   "intents": [      
@@ -62,14 +62,14 @@ Create a Lambda [04:45]
 Select Blank Function [04:53]
 Choose Alexa Skills Kit in Configure Triggers [04:57]  
 (note if you don't see this option please change your location in top right hand corner to N.Virginia.)
-Name your lambda [05:05] 
+Name your lambda [05:05]
 Choose Node.js as Runtime
 Set existing role to lambda_basic_execution [05:33]
 Click Next
 Click Create function [05:51]
 Copy the ARN number from top right hand corner and paste into the configuration page on Alexa Skills tab [05:58]
 Open up two windows in your text editor. One will be for the sample json to examine and one will be write your lambda code.  
-To see the sample JSON go to Alexa Skills > Test. [07:24]  In Service Simulator enter 
+To see the sample JSON go to Alexa Skills > Test. [07:24]  In Service Simulator enter
 <code>
 tell me a fact
 </code>
@@ -121,7 +121,7 @@ tell me a funny
 ```    
 Click 'Ask....'    
 ## Step 5. Test it for realsies    
-Go to [echosim.io](www.echosim.io) [14:35] 
+Go to [echosim.io](www.echosim.io) [14:35]
   Log in with the same amazon account you used to build the skill.    
   Change the language to EN-GB      
   Hold down space bar and say    
