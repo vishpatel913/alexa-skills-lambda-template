@@ -3,7 +3,7 @@
 [Link to the video](https://drive.google.com/drive/folders/0B5189b8eE2iOUjFpRWY3cmJKcXc)... 
 This walkthrough and accompanying video will take you through as simple as possible an Alexa Skill that doesn't involve the words 'Hello' or 'World'.      
 Please feel free to do pull requests for any errors in this walkthrough or in the video. We would really appreciate if you did.      
-Image of the app structure       
+![structure](https://github.com.com/vishpatel7/alexa-lambda-template/master/img/structure.png)       
 This is the structure of our Alexa Skill (don't worry if you don't have an Amazon Echo, [echosim.io](www.echosim.io) will work just fine for our purposes).      
 First things first    
 ## Step 1. Sign up for everything     
