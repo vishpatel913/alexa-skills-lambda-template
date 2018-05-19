@@ -50,15 +50,15 @@ The  interaction model is where you configure the 'front-end' of your app. Here'
   ```
 {      
   "intents": [      
-  {      
-    "slots": [      
     {      
-      "name": "Params",      
-        "type": "CUSTOM"      
+      "slots": [      
+        {      
+          "name": "Params",      
+            "type": "CUSTOM"      
+        }      
+      ],      
+      "intent": "tell"      
     }      
-    ],      
-    "intent": "tell"      
-  }      
   ]      
 }      
 ```
